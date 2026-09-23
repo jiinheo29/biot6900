@@ -1,5 +1,5 @@
-# BIOT 6900 coursework
+# BIOT 6900 Module 2
 
-Name: Jiin Heo 
+Name: Jiin Heo
 
-Module 1 setup assignment. Parts A-C were completed successfully, no major issues encountered.
+Module 2 assignment completed successfully.
