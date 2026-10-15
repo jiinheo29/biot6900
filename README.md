@@ -1,5 +1,7 @@
 # BIOT 6900 Module 2
 
-Name: Jiin Heo
+Name: Jiin Heo  
+Disease: Ovarian cancer
 
-Module 2 assignment completed successfully.
+Module 3 assignment completed successfully.
+No major issues were encountered.
