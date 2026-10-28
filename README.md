@@ -1,29 +1,85 @@
+
 # BIOT 6900 · AI-Powered Biotech Workflows
 
-Name: Jiin Heo  
-Disease: Ovarian cancer (high-grade serous)
+**Name:** Jiin Heo  
+**Disease focus:** High-grade serous ovarian cancer (HGSOC)
 
-## Module 3 Assignment
-Module 3 assignment completed successfully.
-No major issues were encountered.
+## Module 1: Environment Setup & Database Queries
 
-## Module 4 Assignment (Structure Prediction & Druggability)
-- **Disease:** Ovarian cancer (high-grade serous), `ov`
-- **Targets:** KRAS (P01116), PIK3CA (P42336)
-- **Files:** `BIOT6900_Module4_Assignment.ipynb`, `structure_assessment_ov.csv`, `BIOT6900_Module4_Report_jh.pdf`
-- **What didn't work:** Nothing failed.
+**Overview:**  
+Set up and verified the computational environment for BIOT 6900, including Python, conda, Git, and BioPython. Practiced retrieving and interpreting biological information from public databases.
 
-## Module 5: CYP2C9
+**Data sources:**
+- PubMed: Biomedical literature
+- UniProt: Protein sequences and functional annotations
+- Protein Data Bank (PDB): Experimental protein structures
+- GWAS Catalog: Genetic associations with diseases and traits
 
-**Name:** Heo Ji In
-**Gene:** CYP2C9
-**AlphaGenome Atlas:** run live (36 variants scored)
+**Execution:**  
+Completed Parts A–C of the assignment.
 
-I could not find the gene allocation list on Canvas, so I chose CYP2C9, as Step 1 of the brief allows.
+**Issues:**  
+No major issues were reported during the original assignment.
 
-Files: `BIOT6900_Module5_Part3_Assignment.ipynb`, `pgx_classified_CYP2C9.csv`, `BIOT6900_Module5_Report_jh.pdf`. `data/` is not committed. No API key is in the notebook; it is read from the environment.
+## Module 2: Disease and Data Exploration
 
-What did not work, and what I changed:
-- **Calibration was not possible.** After the 0.15 frequency filter only 8 variants carried both a label and a CADD score (1 P/LP, 7 B/LB), and every band had fewer than 10. I did not pool a second gene. All 22 VUS stay VUS.
-- **Atlas merge fix.** The supplied Atlas cell merged scores back on `rsid`. Many variants have no rsid, so the merge duplicated rows and produced wrong `avi` and `top_feature` values. I changed the key to `hgvs_g` (two lines) and re-ran the Atlas and discordance cells.
-- **Atlas coverage.** The Atlas query accepts SNVs only, so it could not score the frameshift deletion (chr10:g.94949282del). Two records with identical reference and alternate alleles (chr10:g.94942290C>C and chr10:g.94981296A>A) also failed. These appear to be star-allele records rather than SNVs; I did not independently confirm their mapping.
+**Overview:**  
+Completed the Module 2 assignment.
+
+**Disease focus:** High-grade serous ovarian cancer.
+
+**Data sources:** To be confirmed from the Module 2 notebook.
+
+**Issues:** No specific execution issues documented.
+
+## Module 3: Protein Language Models
+
+**Overview:**  
+Explored protein language models through sequence conservation, masked amino acid prediction, embeddings, and variant scoring.
+
+**Methods:**  
+Worked with a synthetic toy protein model to understand how sequence-based models represent protein families and evaluate amino acid substitutions.
+
+**Data sources:** Synthetic sequences provided in the course materials.
+
+**Issues:** No major issues were reported.
+
+## Module 4: Structure Prediction & Druggability
+
+**Disease:** High-grade serous ovarian cancer (`ov`)
+
+**Targets:**
+- KRAS (UniProt: P01116)
+- PIK3CA (UniProt: P42336)
+
+**Files:**
+- `BIOT6900_Module4_Assignment.ipynb`
+- `structure_assessment_ov.csv`
+- `BIOT6900_Module4_Report_jh.pdf`
+
+**Issues:** No execution failures reported.
+
+## Module 5: CYP2C9 Variant Interpretation
+
+**Gene:** CYP2C9  
+**AlphaGenome Atlas:** Live analysis, 36 variants scored.
+
+CYP2C9 was selected because the gene allocation list could not be located on Canvas, and Step 1 of the assignment permitted independent gene selection.
+
+**Files:**
+- `BIOT6900_Module5_Part3_Assignment.ipynb`
+- `pgx_classified_CYP2C9.csv`
+- `BIOT6900_Module5_Report_jh.pdf`
+
+The `data/` directory is not committed. The API key is loaded from the environment rather than stored in the notebook.
+
+### Limitations and Troubleshooting
+
+**Calibration:**  
+Calibration was not possible because only eight variants retained both a clinical label and a CADD score after the 0.15 frequency filter (1 P/LP and 7 B/LB). Every score band contained fewer than 10 variants. A second gene was not pooled, and all 22 VUS remained classified as VUS.
+
+**Atlas merge correction:**  
+The supplied Atlas code merged scores using `rsid`, which caused duplicate rows and incorrect `avi` and `top_feature` values for variants without rsIDs. The merge key was changed to `hgvs_g`, and the Atlas and discordance analyses were rerun.
+
+**Atlas coverage limitations:**  
+The Atlas query supports SNVs only and could not score the frameshift deletion `chr10:g.94949282del`. Two records with identical reference and alternate alleles (`chr10:g.94942290C>C` and `chr10:g.94981296A>A`) also failed. These may represent star-allele records, although their mapping was not independently confirmed.
