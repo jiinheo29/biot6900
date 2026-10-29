@@ -83,3 +83,40 @@ The supplied Atlas code merged scores using `rsid`, which caused duplicate rows 
 
 **Atlas coverage limitations:**  
 The Atlas query supports SNVs only and could not score the frameshift deletion `chr10:g.94949282del`. Two records with identical reference and alternate alleles (`chr10:g.94942290C>C` and `chr10:g.94981296A>A`) also failed. These may represent star-allele records, although their mapping was not independently confirmed.
+
+## Module 6: PRS Portability Across Ancestry Groups
+
+**Disease:** Alzheimer's Disease
+
+This analysis evaluates the portability of a European-derived polygenic risk score (PRS) across ancestry groups using real 1000 Genomes genotype data and simulated disease outcomes.
+
+The analysis includes allele harmonization, PRS calculation, ancestry-specific distribution shifts, discrimination, calibration, and incremental predictive value beyond age.
+
+### Key Files
+- `BIOT6900_Module6_Part3_Graded_Starter(1).ipynb` — Analysis notebook
+- `BIOT6900_Module6_Report_jh.pdf` — Final report
+
+### Reproducibility
+1. Open the Module 6 notebook in Jupyter.
+2. Set `USE_DEMO = False`.
+3. Ensure the required input data files are available.
+4. Run **Kernel → Restart & Run All**.
+5. Confirm that Section 2 displays `source: REAL` and file checksums.
+
+**Note:** Genotype and PRS input data are real, but Alzheimer's disease case/control labels are simulated. The reported predictive performance is illustrative and not clinically validated.
+
+## Portfolio Deliverable 1: Multi-Omics Target Discovery
+
+**Disease:** Ovarian Cancer
+
+This portfolio integrates three computational analyses to prioritize potential therapeutic targets.
+
+- **Module 2:** Multi-omics integration of RNA, protein, and mutation data.
+- **Module 3:** ESM-C protein language model-based druggability assessment and target re-ranking.
+- **Module 4:** AlphaFold structural confidence and binding-pocket analysis of KRAS and PIK3CA.
+
+### Key Files
+- `BIOT6900_Portfolio Deliverable 1_jh.pdf` — Final portfolio report
+- `targets_ov.csv` — Multi-omics target ranking
+- `targets_ov_w3.csv` — Druggability-informed target ranking
+- Module 2–4 notebooks and associated figures
