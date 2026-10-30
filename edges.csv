@@ -1,0 +1,30 @@
+src,rel,dst,pvalue,source,confidence,integrated_score
+TP53,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.9913333333333332
+RB1,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.9795596981802042
+EGFR,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.945172658677319
+ERBB2,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.9014380825565912
+MKI67,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.8595108743897026
+PTEN,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.8247714158899244
+PIK3CA,ASSOCIATED_WITH,Ovarian cancer,,Module 2 multi-omics analysis,computational_prioritization,0.6370004438526409
+Ovarian cancer,HAS_PHENOTYPE,Abdominal distension,,Clinical phenotype knowledge; verification required,provisional,
+Ovarian cancer,HAS_PHENOTYPE,Ascites,,Clinical phenotype knowledge; verification required,provisional,
+Ovarian cancer,HAS_PHENOTYPE,Pelvic pain,,Clinical phenotype knowledge; verification required,provisional,
+Ovarian cancer,HAS_PHENOTYPE,Abdominal pain,,Clinical phenotype knowledge; verification required,provisional,
+Ovarian cancer,HAS_PHENOTYPE,Fatigue,,Clinical phenotype knowledge; verification required,provisional,
+TP53,PARTICIPATES_IN,TP53 regulation of cell cycle genes,,Biological pathway knowledge; verify with Reactome,provisional,
+TP53,PARTICIPATES_IN,Cell cycle regulation,,Biological pathway knowledge; verify with Reactome,provisional,
+RB1,PARTICIPATES_IN,Cell cycle regulation,,Biological pathway knowledge; verify with Reactome,provisional,
+MKI67,PARTICIPATES_IN,Cell cycle regulation,,Biological pathway knowledge; verify with Reactome,provisional,
+PIK3CA,PARTICIPATES_IN,PI3K/AKT signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+PTEN,PARTICIPATES_IN,PI3K/AKT signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+EGFR,PARTICIPATES_IN,PI3K/AKT signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+ERBB2,PARTICIPATES_IN,PI3K/AKT signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+EGFR,PARTICIPATES_IN,ERBB receptor signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+ERBB2,PARTICIPATES_IN,ERBB receptor signaling,,Biological pathway knowledge; verify with Reactome,provisional,
+Gefitinib,TARGETS,EGFR,,Known pharmacological target; verify with ChEMBL,provisional,
+Trastuzumab,TARGETS,ERBB2,,Known pharmacological target; verify with ChEMBL,provisional,
+Alpelisib,TARGETS,PIK3CA,,Known pharmacological target; verify with ChEMBL,provisional,
+rs28934578,OCCURS_IN,TP53,,Variant annotation,requires_verification,
+Breast cancer,HAS_PHENOTYPE,Fatigue,,Clinical phenotype knowledge; verification required,provisional,
+ESR1,ASSOCIATED_WITH,Breast cancer,,Known disease-target relationship; verify with Open Targets,provisional,
+Fulvestrant,TARGETS,ESR1,,Known pharmacological target; verify with ChEMBL,provisional,

@@ -1,0 +1,25 @@
+name,kind,source,ensembl,gwas_p,rna_lfc,prot_lfc,druggability,integrated_score,transcriptomic,proteomic,genomic,status
+Ovarian cancer,disease,Module 2 disease selection,,,,,,,,,,
+TP53,gene,,,,,,,0.9913333333333332,2.092621,0.9776779999999996,0.8279569892473119,
+RB1,gene,,,,,,,0.9795596981802042,1.251314,0.4903059999999998,0.032258064516129,
+EGFR,gene,,,,,,,0.945172658677319,1.8259649999999992,1.023966,0.0129032258064516,
+ERBB2,gene,,,,,,,0.9014380825565912,1.480619,0.3527160000000001,0.010752688172043,
+MKI67,gene,,,,,,,0.8595108743897026,2.3754650000000006,0.6858460000000001,0.0086021505376344,
+PTEN,gene,,,,,,,0.8247714158899244,2.4306500000000004,0.139113,0.010752688172043,
+PIK3CA,gene,,,,,,,0.6370004438526409,1.523595,0.131162,0.0064516129032258,
+Abdominal distension,phenotype,,,,,,,,,,,
+Ascites,phenotype,,,,,,,,,,,
+Pelvic pain,phenotype,,,,,,,,,,,
+Abdominal pain,phenotype,,,,,,,,,,,
+Fatigue,phenotype,,,,,,,,,,,
+TP53 regulation of cell cycle genes,pathway,,,,,,,,,,,
+Cell cycle regulation,pathway,,,,,,,,,,,
+PI3K/AKT signaling,pathway,,,,,,,,,,,
+ERBB receptor signaling,pathway,,,,,,,,,,,
+Gefitinib,drug,,,,,,,,,,,approved_other_indication
+Trastuzumab,drug,,,,,,,,,,,approved_other_indication
+Alpelisib,drug,,,,,,,,,,,approved_other_indication
+rs28934578,variant,,,,,,,,,,,
+Breast cancer,disease,Related disease example,,,,,,,,,,
+ESR1,gene,,,,,,,,,,,
+Fulvestrant,drug,,,,,,,,,,,approved_breast_cancer
