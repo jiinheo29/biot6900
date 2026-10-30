@@ -120,3 +120,31 @@ This portfolio integrates three computational analyses to prioritize potential t
 - `targets_ov.csv` — Multi-omics target ranking
 - `targets_ov_w3.csv` — Druggability-informed target ranking
 - Module 2–4 notebooks and associated figures
+
+## Module 7: Knowledge Graphs for Biomedical Data Integration
+
+**Disease:** Ovarian Cancer
+
+This module uses Neo4j and NetworkX to integrate ovarian cancer multi-omics results with genes, biological pathways, clinical phenotypes, drugs, and genetic variants.
+
+### Key Results
+- Constructed a knowledge graph with 24 nodes and 29 relationships.
+- Integrated seven ovarian cancer-associated genes from Module 2.
+- Identified three drug-target connections: Alpelisib–PIK3CA, Gefitinib–EGFR, and Trastuzumab–ERBB2.
+- Combined PageRank with multi-omics evidence scores to rank candidate biomarkers. TP53 ranked highest, followed by EGFR and ERBB2.
+- Identified five communities, including cell-cycle regulation, ERBB signaling, and PI3K/AKT signaling.
+- Explored a cross-disease drug repurposing path involving Fulvestrant, ESR1, breast cancer, and ovarian cancer.
+
+### Files
+- `BIOT6900_Module7_Starter.ipynb` — Completed knowledge graph analysis
+- `BIOT6900_Module7_Report_jh.pdf` — Final report and biological interpretation
+- `my_knowledge_graph.png` — Knowledge graph visualization
+- `nodes.csv` — Exported graph nodes
+- `edges.csv` — Exported graph relationships
+- `biomarker_rankings.csv` — Ranked biomarker candidates
+
+### Limitations
+The graph includes a limited set of ovarian cancer genes, and some biological relationships require further verification. The drug repurposing results are intended for hypothesis generation rather than evidence of clinical efficacy.
+
+### Tools
+Python, pandas, NetworkX, Neo4j AuraDB, Cypher
