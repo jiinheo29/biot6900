@@ -148,3 +148,31 @@ The graph includes a limited set of ovarian cancer genes, and some biological re
 
 ### Tools
 Python, pandas, NetworkX, Neo4j AuraDB, Cypher
+
+## Module 9: Clinical NLP and Outcome Prediction
+
+**Disease:** Acute Respiratory Failure
+
+This module uses a synthetic cohort of 400 patients to extract clinical features from patient notes and predict mortality. The main goal was to identify data leakage and evaluate how it affects model performance.
+
+### Key Results
+- Configured three early signals: hypoxemia, tachypnea, and increased work of breathing.
+- Identified three treatment-related leakage features: intubation, mechanical ventilation, and ICU transfer.
+- Detected `renal_replacement` as an additional hidden leakage feature.
+- Classified `lactate_not_clearing` as a potential early signal, depending on when it was measured.
+- Compared cross-validated AUROC before and after removing leakage:
+  - All features: **0.912**
+  - Declared leakage removed: **0.806**
+  - All leakage removed: **0.709**
+- After leakage removal, age, lactate, hypoxemia, and lactate_not_clearing were the most important predictors.
+
+### Files
+- `BIOT6900_Module9_Notebook3_Graded.ipynb` — Completed clinical NLP pipeline, model evaluation, and D1–D4 answers.
+
+### Limitations
+The dataset is synthetic, and clinical documentation may be less consistent in real patient records. The timing of repeated lactate measurements also needs to be considered when evaluating leakage.
+
+### Tools
+Python, pandas, scikit-learn, clinical NLP, cross-validation, permutation importance
+
+**Execution notes:** No unresolved execution issues.
