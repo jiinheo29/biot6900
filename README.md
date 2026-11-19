@@ -176,3 +176,48 @@ The dataset is synthetic, and clinical documentation may be less consistent in r
 Python, pandas, scikit-learn, clinical NLP, cross-validation, permutation importance
 
 **Execution notes:** No unresolved execution issues.
+
+## Module 8: Single-Cell and Spatial Transcriptomics
+
+**Topic:** Integrating single-cell and spatial transcriptomics to investigate ERBB2 expression in breast cancer.
+
+This project combined breast cancer scRNA-seq data from CELLxGENE Census with a 10x Genomics Visium tissue section. The analysis compared scVI and Harmony for donor integration and examined ERBB2 expression across annotated cell populations and spatial tissue regions.
+
+**Methods:** Scanpy, scvi-tools, Harmony, Squidpy, UMAP, silhouette scores, Moran's I, and spatial neighborhood enrichment.
+
+**Key findings:**
+- Analyzed 18,388 cells from 10 donors and 3,798 spatial spots.
+- Harmony achieved a lower donor silhouette score (−0.082), while scVI achieved a slightly higher cell-type silhouette score (0.031).
+- ERBB2 expression was heterogeneous across cell populations and tissue regions.
+- Spatial analyses identified organized tissue domains, although precise tumor-core, invasive-margin, and immune-niche assignments remained uncertain.
+
+**Files:**
+- `BIOT6900_Module8_Assignment_jh.ipynb`
+- `BIOT6900_Module8_Report_jh.pdf`
+
+## Module 10: Medical Imaging AI
+
+**Topic:** Evaluating shortcut learning in a pathology image classifier.
+
+This project fine-tuned a pretrained DenseNet121 on PathMNIST normal and tumour tissue images. A synthetic scanner calibration patch was introduced into tumour images to test whether the classifier would learn a non-biological shortcut. The confounded model was compared against an independently trained clean control.
+
+**Methods:** Transfer learning, DenseNet121, Grad-CAM, occlusion sensitivity, artifact reliance testing, and prediction flip testing.
+
+**Key findings:**
+- Clean model: 95.8% validation accuracy and 93.0% test accuracy.
+- Confounded model: 100% validation accuracy.
+- Removing the scanner patch reduced confounded tumour recall from 99.7% to 39.3%.
+- Adding the patch to normal tiles caused an 84.7% normal-to-tumour flip rate, compared with 2.7% for the clean control.
+- Grad-CAM and occlusion supported artifact-specific shortcut learning.
+
+**Files:**
+- `BIOT6900_Module10_Graded_Assignment.ipynb`
+- `BIOT6900_Module10_Report_jh.pdf`
+
+## Reproducibility
+
+The analyses were developed using Python and Jupyter notebooks in the `biot6900` environment.
+
+Module 8 includes a computationally intensive scVI integration step that was trained using an NVIDIA Tesla P100 GPU. Saved intermediate results may be required when reproducing the notebook without retraining the model. Module 10 was designed to run on a laptop CPU.
+
+See the individual notebooks for preprocessing, model training, evaluation, and visualization steps.
