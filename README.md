@@ -221,3 +221,9 @@ The analyses were developed using Python and Jupyter notebooks in the `biot6900`
 Module 8 includes a computationally intensive scVI integration step that was trained using an NVIDIA Tesla P100 GPU. Saved intermediate results may be required when reproducing the notebook without retraining the model. Module 10 was designed to run on a laptop CPU.
 
 See the individual notebooks for preprocessing, model training, evaluation, and visualization steps.
+
+### Portfolio Deliverable 2: Genomics & Precision Medicine
+
+Integrated analysis of pharmacogenomics, polygenic risk scores, biomedical knowledge graphs, and single-cell and spatial transcriptomics to evaluate evidence for precision medicine decisions.
+
+**[View Report (PDF)](BIOT6900_Portfolio%20Deliverable%202_jh.pdf)**
